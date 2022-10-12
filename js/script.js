@@ -23,7 +23,6 @@ btnForm.addEventListener("click" , function(){
     else if(ageCategory === "over65") {
         ageDiscount = over65Price;
         ticketCategory = "Biglietto over 65"
-        
     }
 
     totalPrice = tripLenght * pricePerKm ;
@@ -33,8 +32,13 @@ btnForm.addEventListener("click" , function(){
     document.querySelector("#passengerName").innerHTML = name;
     document.querySelector("#ticketPrice").innerHTML = ticketPrice;
     document.querySelector("#ticketDiscount").innerHTML = ticketCategory;
-
     document.getElementById("ticket-price").classList.remove("d-none");
+});
+
+const btnCancel = document.getElementById("btn-cancel");
+btnCancel.addEventListener("click" , function(){
+    document.getElementById('input-name').value = '';
+    document.getElementById('input-km').value = '';
 });
 
 
