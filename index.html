@@ -19,7 +19,7 @@
                         <div class="row">
                             <div class="col">
                                 <p class="text-danger">Nome Cognome</p>
-                                <input class="border-danger rounded-1 text-center"id="input-nome" type="text" value="" placeholder="Nome">
+                                <input class="border-danger rounded-1 text-center" id="input-name" type="text" value="" placeholder="Nome">
 
                             </div>
                             <div class="col">
@@ -28,9 +28,9 @@
                             </div>
                             <div class="col">
                                 <p class="text-danger">Fascia di età</p>
-                                <select class="border-danger rounded-1 text-center id="age">
-                                    <option value="maggiorenne">Maggiorenne</option>
-                                    <option value="minorenne">Minorenne</option>
+                                <select class="border-danger rounded-1 text-center" id="age">
+                                    <option value="adult">Maggiorenne</option>
+                                    <option value="underAge">Minorenne</option>
                                     <option value="over65">Over 65</option>
                                   </select>
                             </div>
@@ -38,7 +38,7 @@
 
                         <div class="row mt-5">
                             <div class="col ">
-                                <button class="text-danger rounded-2 border-secondary">Genera</button>
+                                <button id="btn-form" class="text-danger rounded-2 border-secondary">Genera</button>
                                 <button class="text-danger rounded-2 border-secondary">Annulla</button>
                             </div>
                         </div>
@@ -46,7 +46,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-3">
+        <div id="ticket-price" class="row mt-3 d-none">
             <div class="col">
                 <h2>IL TUO BIGLIETTO</h2>
                 <div class="card">
@@ -82,5 +82,6 @@
         </div>
     </div>
     
+    <script src="js/script.js"></script>
 </body>
 </html>
