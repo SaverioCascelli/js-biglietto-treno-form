@@ -8,14 +8,46 @@
 
     <title>Biglietto treno form</title>
 </head>
-<body>
+<body class="bg-danger">
     
     <div class="container">
         <div class="row">
-            <div class="col"></div>
+            <div class="col text-center">
+                <h2>Calcola il prezzo del tuo biglietto</h2>
+                <div class="card">
+                    <div class="contailer-fluid p-5">
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-danger">Nome Cognome</p>
+                                <input class="border-danger rounded-1 text-center"id="input-nome" type="text" value="" placeholder="Nome">
+
+                            </div>
+                            <div class="col">
+                                <p class="text-danger">Km da percorrere</p>
+                                <input class="border-danger rounded-1 text-center" id="input-km" type="text" value="" placeholder="km">
+                            </div>
+                            <div class="col">
+                                <p class="text-danger">Fascia di età</p>
+                                <select class="border-danger rounded-1 text-center id="age">
+                                    <option value="maggiorenne">Maggiorenne</option>
+                                    <option value="minorenne">Minorenne</option>
+                                    <option value="over65">Over 65</option>
+                                  </select>
+                            </div>
+                        </div>
+
+                        <div class="row mt-5">
+                            <div class="col ">
+                                <button class="text-danger rounded-2 border-secondary">Genera</button>
+                                <button class="text-danger rounded-2 border-secondary">Annulla</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row">
-            <div class="col"></div>
+            <div class="col card"></div>
         </div>
     </div>
     
